@@ -15,10 +15,6 @@ module.exports = function(grunt) {
         },
 
         watch: {
-            sass: {
-                files: ["./styles/**/*.scss"],
-                tasks: ["compass:dist", "default"]
-            },
             js: {
                 files: ["scripts/react/**/*.js"],
                 tasks: ["babel"]
