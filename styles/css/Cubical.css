@@ -1,0 +1,12 @@
+/* line 4, ../scss/Cubical.scss */
+.cubical-container {
+  border: 1px solid;
+  padding: 40px;
+  background-color: white;
+}
+/* line 9, ../scss/Cubical.scss */
+.cubical-container .cubical-view {
+  border: 1px solid grey;
+  margin-bottom: 2px;
+  padding: 20px;
+}

@@ -1,0 +1,41 @@
+@import "mixins";
+@import "variables";
+
+.filter-container {
+	padding-bottom: 10px;
+	.filterOptions {
+		padding-bottom: 5px;
+	}
+	.filter-by-options {
+		position: absolute;
+		top: 40px;
+		border: 1px solid $LightGrey;
+		z-index: 1;
+		background-color: $LightestGrey;
+		width: 100%;
+		box-shadow: 2px 2px 5px $LighterGrey;
+		padding: 10px 0;
+
+		&:before {
+
+			content: "";
+			position: absolute;
+			right: 40px;
+			margin-top: -25px;
+			@include arrow-up($LightestGrey, 15px);
+
+		}
+	}
+}
+
+.multi-select-view {
+	margin-top: 5px;
+	padding-top: 5px;
+	border-top: 1px dotted lightgrey;
+
+	.select-option {
+		padding-bottom: 5px;
+		font-size: $fontSizeMinus2;
+
+	}
+}

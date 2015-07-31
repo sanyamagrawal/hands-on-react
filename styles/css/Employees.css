@@ -1,0 +1,61 @@
+/* line 4, ../scss/Employees.scss */
+.person-container .people-circle {
+  padding-left: 11px;
+}
+/* line 7, ../scss/Employees.scss */
+.person-container .semi-circle {
+  width: 50px;
+  height: 25px;
+  background: lightslategrey;
+}
+/* line 11, ../scss/Employees.scss */
+.person-container .semi-circle.down-facing {
+  border-radius: 25px 25px 0 0;
+}
+/* line 15, ../scss/Employees.scss */
+.person-container .semi-circle.up-facing {
+  border-radius: 0 0 25px 25px;
+}
+/* line 18, ../scss/Employees.scss */
+.person-container .semi-circle.empty {
+  background-color: lightgray;
+}
+/* line 22, ../scss/Employees.scss */
+.person-container .semi-circle:hover ~ .person-info {
+  display: inline-block;
+}
+/* line 28, ../scss/Employees.scss */
+.person-container .person-info {
+  display: none;
+  position: absolute;
+  top: 0px;
+  left: 58px;
+  z-index: 1;
+  border: 1px solid lightslategray;
+  padding: 10px;
+  background-color: white;
+  box-shadow: 2px 2px 5px grey;
+  width: 150px;
+}
+/* line 40, ../scss/Employees.scss */
+.person-container .person-info:before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 0;
+  margin: 0 0 0 -10px;
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right: 10px solid lightslategray;
+}
+/* line 52, ../scss/Employees.scss */
+.person-container.isVisible .semi-circle {
+  background-color: dodgerblue;
+}
+
+/* line 61, ../scss/Employees.scss */
+.workstation-view {
+  margin-bottom: 20px;
+}

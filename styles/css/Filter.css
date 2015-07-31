@@ -1,0 +1,43 @@
+/* line 4, ../scss/Filter.scss */
+.filter-container {
+  padding-bottom: 10px;
+}
+/* line 6, ../scss/Filter.scss */
+.filter-container .filterOptions {
+  padding-bottom: 5px;
+}
+/* line 9, ../scss/Filter.scss */
+.filter-container .filter-by-options {
+  position: absolute;
+  top: 40px;
+  border: 1px solid #9a9a9a;
+  z-index: 1;
+  background-color: #e6e6e6;
+  width: 100%;
+  box-shadow: 2px 2px 5px #b3b3b3;
+  padding: 10px 0;
+}
+/* line 19, ../scss/Filter.scss */
+.filter-container .filter-by-options:before {
+  content: "";
+  position: absolute;
+  right: 40px;
+  margin-top: -25px;
+  width: 0;
+  height: 0;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-bottom: 15px solid #e6e6e6;
+}
+
+/* line 31, ../scss/Filter.scss */
+.multi-select-view {
+  margin-top: 5px;
+  padding-top: 5px;
+  border-top: 1px dotted lightgrey;
+}
+/* line 36, ../scss/Filter.scss */
+.multi-select-view .select-option {
+  padding-bottom: 5px;
+  font-size: 1.2rem;
+}

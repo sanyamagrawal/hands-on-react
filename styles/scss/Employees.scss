@@ -1,0 +1,63 @@
+@import "mixins";
+
+.person-container {
+	.people-circle {
+		padding-left: 11px;
+	}
+	.semi-circle {
+		width: 50px;
+		height: 25px;
+		background: lightslategrey;
+		&.down-facing {
+			border-radius: 25px 25px 0 0;
+		}
+
+		&.up-facing {
+			border-radius: 0 0 25px 25px;
+		}
+		&.empty {
+			background-color: lightgray;
+		}
+		&:hover {
+			~ .person-info {
+				@include show();
+			}
+		}
+	}
+
+	.person-info {
+		@include hide();
+		position: absolute;
+		top: 0px;
+		left: 58px;
+		z-index: 1;
+		border: 1px solid lightslategray;
+		padding: 10px;
+		background-color: white;
+		box-shadow: 2px 2px 5px grey;
+		width: 150px;
+
+		&:before {
+			content: "";
+			position: absolute;
+			top: 2px;
+			left: 0;
+			margin: 0 0 0 -10px;
+			@include arrow-left(lightslategray);
+		}
+
+	}
+
+	&.isVisible {
+		.semi-circle{
+			background-color: dodgerblue;
+		}
+		//.person-info {
+		//	@include show();
+		//}
+	}
+}
+
+.workstation-view {
+	margin-bottom: 20px;
+}

@@ -1,0 +1,24 @@
+//Font Size
+
+$fontSize: 1.4rem;
+$fontSizeMinus1: $fontSize - 0.1;
+$fontSizeMinus2: $fontSize - 0.2;
+$fontSizePlus1: $fontSize + 0.1;
+$fontSizePlus2: $fontSize + 0.2;
+$pageTitle: 2.2rem;
+
+//Colors
+
+$base-red: red;
+$base-white: white;
+$base-grey: grey;
+
+$LightRed: lighten($base-red, 30%);
+$DarkRed: darken($base-red, 10%);
+
+$LightGrey: lighten($base-grey, 10%);
+$LighterGrey: lighten($base-grey, 20%);
+$LightestGrey: lighten($base-grey, 40%);
+$DarkGrey: darken($base-grey, 10%);
+$DarkerGrey: darken($base-grey, 20%);
+$DarkestGrey: darken($base-grey, 30%);

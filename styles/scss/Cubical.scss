@@ -1,0 +1,14 @@
+@import "mixins";
+@import "variables";
+
+.cubical-container {
+	border: 1px solid;
+	padding: 40px;
+	background-color: $base-white;
+
+	.cubical-view {
+		border: 1px solid $base-grey;
+		margin-bottom: 2px;
+		padding: 20px;
+	}
+}

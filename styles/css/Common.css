@@ -1,0 +1,29 @@
+/* line 4, ../scss/Common.scss */
+body .light-red {
+  background-color: #ff9999 !important;
+}
+/* line 7, ../scss/Common.scss */
+body .dark-red {
+  background-color: #cc0000;
+}
+/* line 10, ../scss/Common.scss */
+body .dash_border {
+  border: 1px dashed #000 !important;
+}
+/* line 13, ../scss/Common.scss */
+body .fullCircle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+/* line 18, ../scss/Common.scss */
+body .subsectionText12 {
+  font-size: 1.2rem;
+  color: grey;
+}
+/* line 23, ../scss/Common.scss */
+body .subsectionText12Bold {
+  font-size: 1.2rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+}

@@ -1,0 +1,54 @@
+@mixin hide() {
+	display: none;
+}
+
+@mixin show($type : inline-block) {
+	display: $type;
+}
+
+@mixin box-sizing( $type: border-box ) {
+	-webkit-box-sizing: $type;
+	-moz-box-sizing: $type;
+	-o-box-sizing: $type;
+	-ms-box-sizing: $type;
+	box-sizing: $type;
+}
+
+@mixin font-smoothing($type: subpixel-antialiased) {
+	-webkit-font-smoothing:  $type;
+	-moz-font-smoothing: $type;
+	-o-font-smoothing: $type;
+	font-smoothing: $type;
+}
+
+@mixin arrow-up($color : lightgrey, $size : 10px) {
+	width: 0;
+	height: 0;
+	border-left: $size solid transparent;
+	border-right: $size solid transparent;
+	border-bottom: $size solid $color;
+}
+
+@mixin arrow-down($color : lightgrey) {
+	width: 0;
+	height: 0;
+	border-left: 20px solid transparent;
+	border-right: 20px solid transparent;
+	border-top: 20px solid $color;
+}
+
+@mixin arrow-right($color : lightgrey) {
+	width: 0;
+	height: 0;
+	border-top: 60px solid transparent;
+	border-bottom: 60px solid transparent;
+	border-left: 60px solid $color;
+}
+
+@mixin arrow-left($color : lightgrey) {
+	width: 0;
+	height: 0;
+	border-top: 10px solid transparent;
+	border-bottom: 10px solid transparent;
+	border-right:10px solid $color;
+}
