@@ -19,9 +19,9 @@ module.exports = function(grunt) {
                 files: ["./styles/**/*.scss"],
                 tasks: ["compass:dist", "default"]
             },
-            react: {
+            js: {
                 files: ["scripts/react/**/*.js"],
-                tasks: ["browserify"]
+                tasks: ["babel"]
             }
         },
 
@@ -85,7 +85,7 @@ module.exports = function(grunt) {
                 sourceMap: true
             },
             dist: {
-                src: ['scripts/react/components/MainApp.js'],
+                src: ['scripts/react/ReactApp.js'],
                 dest: 'dist/js/<%= pkg.name %>.js'
             }
         }
