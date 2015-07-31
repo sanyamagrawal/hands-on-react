@@ -17,7 +17,7 @@ module.exports = function(grunt) {
         watch: {
             js: {
                 files: ["scripts/react/**/*.js"],
-                tasks: ["babel"]
+                tasks: ["browserify"]
             }
         },
 
@@ -100,8 +100,8 @@ module.exports = function(grunt) {
         "concat:cssLibs",
         "copy",
         "concat:reactExternalScripts",
-        "babel"
-        //"browserify"
+       // "babel"
+        "browserify"
         //"concat:reactInternalScripts"
     ]);
 
